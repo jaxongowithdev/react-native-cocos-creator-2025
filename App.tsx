@@ -5,7 +5,7 @@
  * @format
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import type {PropsWithChildren} from 'react';
 import {
   ScrollView,
@@ -14,6 +14,7 @@ import {
   Text,
   useColorScheme,
   View,
+  NativeModules
 } from 'react-native';
 
 import {
@@ -27,9 +28,14 @@ import {
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
-
+// /Users/user/Desktop/AwesomeProject/ios/CocosGame/native/build/libs/Release
 function Section({children, title}: SectionProps): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
+  useEffect(() => {
+    // NativeModules.CocosGameModule.startGame();
+    // console.log('NativeModules:', NativeModules?.MyDeviceInfo.getDeviceInfo('huhuhuhu'));
+    console.log('NativeModules:', NativeModules?.CocosLauncher?.openCocos());
+  }, []);
   return (
     <View style={styles.sectionContainer}>
       <Text
