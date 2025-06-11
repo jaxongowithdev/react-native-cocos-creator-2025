@@ -12,8 +12,6 @@
 		69FB6DA0313EFEF4B2E9FC54 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		CEBC07C72DF4A50B0060F8AA /* libboost_container.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBC07C62DF4A50B0060F8AA /* libboost_container.a */; };
-		CEBC07C92DF4A50B0060F8AA /* libcocos_engine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBC07C82DF4A50B0060F8AA /* libcocos_engine.a */; };
 		CEBC34FB2DF4D31B0060F8AA /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC34FA2DF4D31B0060F8AA /* UIApplication.swift */; };
 		CEBC34FD2DF4D3640060F8AA /* CocosLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC34FC2DF4D3640060F8AA /* CocosLauncher.m */; };
 		CEBC34FF2DF4D3910060F8AA /* CocosLaucher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC34FE2DF4D3910060F8AA /* CocosLaucher.swift */; };
@@ -23,7 +21,33 @@
 		CEBC8DF52DF5A7010060F8AA /* libcocos_engine.a in Sources */ = {isa = PBXBuildFile; fileRef = CEBC07B62DF455780060F8AA /* libcocos_engine.a */; };
 		CEBC8DF62DF5A7010060F8AA /* libboost_container.a in Sources */ = {isa = PBXBuildFile; fileRef = CEBC07AF2DF44B8E0060F8AA /* libboost_container.a */; };
 		CEBC8DF72DF5A7010060F8AA /* libcocos_engine.a in Sources */ = {isa = PBXBuildFile; fileRef = CEBC07B12DF44B8E0060F8AA /* libcocos_engine.a */; };
+		CEBCD0B32DF981330060F8AA /* libboost_container.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBCD0AE2DF981220060F8AA /* libboost_container.a */; };
+		CEBCD0B42DF981330060F8AA /* libcocos_engine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBCD0B02DF981220060F8AA /* libcocos_engine.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEBCD0AD2DF981220060F8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBCD0A22DF981220060F8AA /* NewProject_2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F37901A06B8F4F238ADB78E2;
+			remoteInfo = boost_container;
+		};
+		CEBCD0AF2DF981220060F8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBCD0A22DF981220060F8AA /* NewProject_2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE61D9011DFE4486A521FFF9;
+			remoteInfo = cocos_engine;
+		};
+		CEBCD0B12DF981220060F8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBCD0A22DF981220060F8AA /* NewProject_2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A917E1DE9C3940579F847EC6;
+			remoteInfo = "NewProject_2-mobile";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		13B07F961A680F5B00A75B9A /* AwesomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +69,7 @@
 		CEBC34FC2DF4D3640060F8AA /* CocosLauncher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocosLauncher.m; sourceTree = "<group>"; };
 		CEBC34FE2DF4D3910060F8AA /* CocosLaucher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocosLaucher.swift; sourceTree = "<group>"; };
 		CEBC35002DF4D40B0060F8AA /* AwesomeProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AwesomeProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEBCD0A22DF981220060F8AA /* NewProject_2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NewProject_2.xcodeproj; path = /Users/user/Documents/NewProject_2/build/ios/proj/NewProject_2.xcodeproj; sourceTree = "<absolute>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -53,8 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBC07C72DF4A50B0060F8AA /* libboost_container.a in Frameworks */,
-				CEBC07C92DF4A50B0060F8AA /* libcocos_engine.a in Frameworks */,
+				CEBCD0B32DF981330060F8AA /* libboost_container.a in Frameworks */,
+				CEBCD0B42DF981330060F8AA /* libcocos_engine.a in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-AwesomeProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +128,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				CEBCD0A22DF981220060F8AA /* NewProject_2.xcodeproj */,
 				13B07FAE1A68108700A75B9A /* AwesomeProject */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -129,6 +155,16 @@
 				5709B34CF0A7D63546082F79 /* Pods-AwesomeProject.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CEBCD0A52DF981220060F8AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEBCD0AE2DF981220060F8AA /* libboost_container.a */,
+				CEBCD0B02DF981220060F8AA /* libcocos_engine.a */,
+				CEBCD0B22DF981220060F8AA /* NewProject_2-mobile */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,12 +216,43 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CEBCD0A52DF981220060F8AA /* Products */;
+					ProjectRef = CEBCD0A22DF981220060F8AA /* NewProject_2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* AwesomeProject */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CEBCD0AE2DF981220060F8AA /* libboost_container.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libboost_container.a;
+			remoteRef = CEBCD0AD2DF981220060F8AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEBCD0B02DF981220060F8AA /* libcocos_engine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcocos_engine.a;
+			remoteRef = CEBCD0AF2DF981220060F8AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEBCD0B22DF981220060F8AA /* NewProject_2-mobile */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			name = "NewProject_2-mobile";
+			path = "NewProject_2-mobile.app";
+			remoteRef = CEBCD0B12DF981220060F8AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
@@ -386,11 +453,8 @@
 					"\"$(PODS_ROOT)/DoubleConversion\"",
 					"\"$(PODS_ROOT)/boost\"",
 					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
-					"$(PROJECT_DIR)/CocosGame/native/build/libs/Release/libboost_container.a",
 					"\"$(PODS_ROOT)/Headers/Private/Yoga\"",
-					"$(PROJECT_DIR)/CocosGame/native/build/libs/Release/libcocos_engine.a",
-					"\"$(SRCROOT)/download372/download372-mobile/Header\\\\ Files\"/**",
-					"\"$(PROJECT_DIR)/CocosGame\"",
+					"\"$(SRCROOT)/NewProject_2/NewProject_2-mobile/Header\\\\ Files\"",
 				);
 				INFOPLIST_FILE = AwesomeProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -460,13 +524,6 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Yoga\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/fmt\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/glog\"",
-					"$(PROJECT_DIR)/CocosGame/native/build/libs/Release/libboost_container.a",
-					"$(PROJECT_DIR)/CocosGame/native/build/libs/Release/libcocos_engine.a",
-					"$(PROJECT_DIR)/CocosGame/build/ios/proj/boost/container/archives/Release",
-					"$(PROJECT_DIR)/CocosGame/build/ios/proj/archives/Release",
-					"$(PROJECT_DIR)/CocosGame/native/build/libs/Release",
-					"$(PROJECT_DIR)/CocosGame/build/ios/proj/boost/container/archives/Debug",
-					"$(PROJECT_DIR)/CocosGame/native/engine/ios/**",
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
@@ -564,11 +621,8 @@
 					"\"$(PODS_ROOT)/DoubleConversion\"",
 					"\"$(PODS_ROOT)/boost\"",
 					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
-					"$(PROJECT_DIR)/CocosGame/native/build/libs/Release/libboost_container.a",
 					"\"$(PODS_ROOT)/Headers/Private/Yoga\"",
-					"$(PROJECT_DIR)/CocosGame/native/build/libs/Release/libcocos_engine.a",
-					"\"$(SRCROOT)/download372/download372-mobile/Header\\\\ Files\"/**",
-					"\"$(PROJECT_DIR)/CocosGame\"",
+					"\"$(SRCROOT)/NewProject_2/NewProject_2-mobile/Header\\\\ Files\"",
 				);
 				INFOPLIST_FILE = AwesomeProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -638,13 +692,6 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Yoga\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/fmt\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/glog\"",
-					"$(PROJECT_DIR)/CocosGame/native/build/libs/Release/libboost_container.a",
-					"$(PROJECT_DIR)/CocosGame/native/build/libs/Release/libcocos_engine.a",
-					"$(PROJECT_DIR)/CocosGame/build/ios/proj/boost/container/archives/Release",
-					"$(PROJECT_DIR)/CocosGame/build/ios/proj/archives/Release",
-					"$(PROJECT_DIR)/CocosGame/native/build/libs/Release",
-					"$(PROJECT_DIR)/CocosGame/build/ios/proj/boost/container/archives/Debug",
-					"$(PROJECT_DIR)/CocosGame/native/engine/ios/**",
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
